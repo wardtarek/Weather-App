@@ -1,0 +1,221 @@
+:root {
+  --main-color: #1e202b;
+  --second-color: #1290d8;
+}
+input::placeholder, textarea::placeholder {
+  color: #757575 !important;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background-color: var(--main-color);
+}
+.fs-7 {
+  font-size: 10px;
+}
+.w-30 {
+  width: 30%;
+}
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 25px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.navbar-nav {
+  --bs-nav-link-hover-color: var(--second-color);
+}
+.navbar-nav .nav-link.active {
+  color: var(--second-color);
+  border: 2px solid var(--second-color);
+}
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link.active:focus {
+  color: var(--second-color);
+  border: 2px solid var(--second-color);
+}
+.nav-link:hover {
+  border: 2px solid var(--second-color);
+}
+.nav-link:focus {
+  border: 2px solid var(--second-color);
+}
+.navbar li {
+  padding-inline: 10px;
+}
+
+.sec1 {
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  height: 45vh;
+}
+.input-group {
+  background-color: var(--main-color);
+}
+.inputs {
+  font-size: 15px;
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+}
+
+.inputs:focus {
+  box-shadow: none;
+  background-color: var(--main-color);
+  color: #fff;
+}
+.btn {
+  background-color: var(--second-color);
+  color: #fff;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: var(--second-color);
+  color: #fff;
+}
+.sec2 {
+  background-color: var(--main-color);
+}
+
+.sec2 .container {
+  transform: translateY(-136px);
+}
+.card {
+  position: relative;
+  height: 100%;
+}
+.card1 {
+  border-radius: 20px 20px 0 0;
+}
+.card1 .card-header:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.card1 .card-body {
+  border-radius: 0;
+}
+.card2 {
+  border-radius: 0;
+}
+.card2 .card-header:first-child {
+  border-radius: 0;
+}
+.card2 .card-body {
+  border-radius: 0;
+}
+.card3 {
+  border-radius: 0 0 20px 20px;
+}
+.card3 .card-header:first-child {
+  border-radius: 0;
+}
+.card3 .card-body {
+  border-radius: 0 0 10px 10px;
+}
+footer .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer i {
+  color: var(--second-color);
+}
+footer .icon:hover {
+  background-color: var(--second-color);
+}
+footer .icon:hover i {
+  color: #fff;
+}
+.container {
+  width: 100%;
+}
+.head a,
+.head p,
+.head i {
+  font-size: 13px;
+  color: #fff;
+}
+.head a {
+  color: #bfc1c8;
+  text-decoration: none;
+}
+.head a:hover {
+  text-decoration: underline;
+}
+.item1 {
+  background-color: #262936;
+}
+.item1 i {
+  font-size: 18px;
+  margin-right: 10px;
+  background-image: linear-gradient(#87c6ea, var(--second-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.item1 p {
+  color: #bfc1c8;
+  font-size: 14px;
+}
+.item2 h2 {
+  color: #fff;
+}
+.item2 p {
+  color: #bfc1c8;
+  font-size: 14px;
+}
+.item2 .form-control{
+  padding: 15px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: solid #75757597 2px;
+  font-size: 14px;
+}
+.item2 .form-control:hover{
+  border-color: var(--second-color);
+}
+.item2 .form-control:focus{
+  border-color: var(--second-color);
+  box-shadow: none;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .card1 {
+    border-radius: 20px 0 0 20px;
+  }
+  .card1 .card-header:first-child {
+    border-radius: 10px 0 0 0;
+  }
+  .card1 .card-body {
+    border-radius: 0 0 0 10px;
+  }
+  .card3 {
+    border-radius: 0 20px 20px 0;
+  }
+  .card3 .card-header:first-child {
+    border-radius: 0 10px 0 0;
+  }
+  .card3 .card-body {
+    border-radius: 0 0 10px 0;
+  }
+  .input-group {
+    width: 75%;
+    margin-inline: auto;
+  }
+  footer p {
+    margin-left: 60px;
+  }
+}
